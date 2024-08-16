@@ -1,0 +1,1 @@
+# mangata-gallo-jewelry-shop
