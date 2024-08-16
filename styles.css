@@ -25,7 +25,7 @@ body {
 @keyframes load {
 50% {
   transform: translate(0, -50%);
-  background-color: #dc3545;
+  background-color: #AD0B4F;
 }
 100% {
   transform: translate(0, -100%);
@@ -56,7 +56,7 @@ main {
 }
 @keyframes colored {
   100% {
-    border-color: #f43383;
+    border-color: #AD0B4F;
   }
 }
 .card-img-overlay .alert {
@@ -70,7 +70,7 @@ main {
 }
 @keyframes alerts {
   100% {
-    box-shadow: inset 1rem 0rem 10rem #f43383;
+    box-shadow: inset 1rem 0rem 10rem #AD0B4F;
   }
 }
 .card-img-overlay .btn {
@@ -103,7 +103,7 @@ main {
 /*--Shop--*/
 
 #shop .card {
-  background-color: #f32178;
+  background-color: #AD0B4F;
   border-width: .1rem;
   border: .1rem dashed #007bff;
   animation: gravity 1.5s ease-in-out infinite alternate;
@@ -159,7 +159,7 @@ main {
   margin-bottom: 10rem;
 }
 #story .card {
-  background-color: #f32178;
+  background-color: #AD0B4F;
   border-radius: .5rem;
   border: none;
 }
@@ -186,7 +186,7 @@ main {
 
 /*Footer*/
 #contact {
-  background-color: #f32178;
+  background-color: #AD0B4F;
 }
 footer img {
   width: 50%;
