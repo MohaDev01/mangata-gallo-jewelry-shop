@@ -1,0 +1,193 @@
+/*General*/
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto;
+}
+body {
+  margin: -10rem 0% 0rem 0%;
+  padding-top: 10rem;
+  letter-spacing: -.01em;
+}
+
+/*Loader*/
+
+#loader {
+  background-color: #ffff00;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  transition: background-color 1s;
+  animation: load 1s ease forwards;
+}
+@keyframes load {
+50% {
+  transform: translate(0, -50%);
+  background-color: #dc3545;
+}
+100% {
+  transform: translate(0, -100%);
+  background-color: #ffff00;
+}
+}
+
+/*Nav*/
+
+.navbar-brand {
+  border-bottom: .1rem #ffffff groove;
+}
+
+
+/*Main*/
+
+main {
+  min-height: 300vh;
+}
+/*--Promotional Picture*/
+
+#promo-pic {
+  margin-bottom: 20rem;
+}
+#promo-pic .card {
+  border-width: .1rem;
+  animation: colored 2s ease infinite alternate;
+}
+@keyframes colored {
+  100% {
+    border-color: #f43383;
+  }
+}
+.card-img-overlay .alert {
+  position:absolute;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  bottom: 1rem;
+  left: 1rem;
+  animation: alerts 2s ease infinite alternate;
+}
+@keyframes alerts {
+  100% {
+    box-shadow: inset 1rem 0rem 10rem #f43383;
+  }
+}
+.card-img-overlay .btn {
+  position:absolute;
+  bottom: 2.3rem;
+  left: 10rem;
+}
+
+/*Dynamic Text*/
+
+#dynamic-text h3 {
+  margin-top: -10rem;
+  margin-bottom: 10rem;
+}
+@keyframes dynamic {
+  from {
+    width:0;
+  }
+  to {
+    width:100%;
+    transform: translate(0, -50%);
+    border: none;
+  }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+/*--Shop--*/
+
+#shop .card {
+  background-color: #f32178;
+  border-width: .1rem;
+  border: .1rem dashed #007bff;
+  animation: gravity 1.5s ease-in-out infinite alternate;
+}
+@keyframes gravity {
+  100% {
+    transform: translate(0, -2.5%);
+    box-shadow: 0rem 0rem 1.5rem #dddddd;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  #shop .card {
+    margin-bottom: 2rem;
+  }
+  #dynamic-text h3 {
+    margin-top: -10rem;
+    margin-bottom: 10rem;
+    white-space: nowrap;
+    border-right: 2px solid;
+    overflow: hidden;
+    width: 0;
+    animation: dynamic 2s 1s forwards,
+               blink-caret .75s step-end infinite;
+  }
+}
+@media screen and (max-width: 61.938rem) {
+  #shop .card {
+    margin-bottom: 2rem;
+  }
+  #dynamic-text h3 {
+    margin-top: -10rem;
+    margin-bottom: 10rem;
+    white-space: nowrap;
+    border-right: 2px solid;
+    overflow: hidden;
+    width: 0;
+    animation: dynamic 2s 1s forwards,
+               blink-caret .75s step-end infinite;
+  }
+}
+
+/*Background Logo*/
+
+#bg-logo img {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+/*Story*/
+
+#story{
+  margin-bottom: 10rem;
+}
+#story .card {
+  background-color: #f32178;
+  border-radius: .5rem;
+  border: none;
+}
+#story p:first-child {
+  margin-top: 2rem;
+}
+#story p:nth-child(3) {
+  margin-bottom: 5rem;
+}
+#story #back-to-top {
+  display: inline-flex;
+  text-decoration: none;
+  border: .1rem solid;
+  border-radius: 1rem;
+  padding: .1rem .4rem .1rem .4rem;
+  animation: floats 2s ease infinite alternate;
+}
+@keyframes floats {
+  100% {
+    transform: translate(0, -50%);
+    box-shadow: 0rem 0rem .5rem #e1e1e1;
+  }
+}
+
+/*Footer*/
+#contact {
+  background-color: #f32178;
+}
+footer img {
+  width: 50%;
+}
