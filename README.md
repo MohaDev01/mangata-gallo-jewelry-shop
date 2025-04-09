@@ -26,7 +26,6 @@ The live version of the website is accessible at [Mangata Gallo Jewelry Shop](ht
 
 - **Responsive Design**: Optimized for all screen sizes, including desktops, tablets, and mobile devices.
 - **Product Display**: Showcases various jewelry products with images, descriptions, and prices.
-- **Contact Form**: Customers can reach out for inquiries or custom orders.
 - **Smooth Navigation**: Easy-to-use menu and intuitive user interface.
 - **Modern UI**: Clean, minimalistic design with a focus on user experience and aesthetics.
 - **SEO Friendly**: Structured for search engine visibility.
